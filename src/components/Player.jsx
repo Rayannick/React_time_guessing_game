@@ -3,6 +3,8 @@ import { useState } from "react";
 
 export default function Player() {
 
+
+  // This is because setting ref.current does not trigger a re-render. Information that’s used for rendering should be state instead.
   const playername = useRef()
 
 
